@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles_telebusca.css">
+  <title>Tele Busca</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Pet Shop</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="busca.html">Busca</a></li>
+        <li><a href="cadastro_pet.html">Cadastre-se</a></li>
+        <li><a href="tele_busca.html">Tele Dog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Tele Busca de Animais</h1>
+    <p>Selecione o serviço desejado e informe os detalhes para agendar a tele busca do seu animal.</p>
+  </section>
+
+  <section class="telebusca-form">
+    <form id="telebusca-form">
+      <label for="service">Serviço:</label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Selecione o serviço</option>
+        <option value="tosa">Tosa</option>
+        <option value="atendimentoveterinario">Atendimento Veterinário</option>
+      </select>
+
+      <select id="pet-name" name="pet-name" required>
+        <option value="" disabled selected>Selecione o pet</option>
+        <!-- As opções serão preenchidas automaticamente com JavaScript -->
+      </select>
+
+      <label for="contact">Telefone de Contato:</label>
+      <input type="tel" id="contact" name="contact" required>
+
+      <label for="address">Endereço:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="date">Data da Tele Busca:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Agendar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 Pet Shop. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/agendamento.js"></script>
+</body>
+</html>
