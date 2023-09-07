@@ -1,43 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+
+<html lang="en"> <!-- Define o idioma da página como inglês -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style_cadas.css">
-  <title>Cadastro de Pet</title>
+  <meta charset="UTF-8"> <!-- Declara o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a escala inicial e a largura da viewport para dispositivos móveis -->
+  <link rel="stylesheet" href="css/style_cadas.css"> <!-- Importa um arquivo CSS externo para estilizar a página -->
+  <title>Cadastro de Pet</title> <!-- Define o título da página exibido na aba do navegador -->
 </head>
 <body>
-  <div class="registration-container">
-    <h2>Cadastro de Pet</h2>
-    <form id="registration-form">
-      <label for="name">Nome do Pet:</label>
-      <input type="text" id="name" name="name" required>
+  <div class="registration-container"> <!-- Container para o formulário de cadastro -->
+    <h2>Cadastro de Pet</h2> <!-- Título da seção de cadastro -->
+    <form id="registration-form"> <!-- Formulário de cadastro com um identificador único "registration-form" -->
+      <label for="name">Nome do Pet:</label> <!-- Rótulo para o campo de nome do pet -->
+      <input type="text" id="name" name="name" required> <!-- Campo de entrada de texto para o nome do pet, requerido -->
 
-      <label for="birthdate">Data de Nascimento:</label>
-      <input type="date" id="birthdate" name="birthdate" required>
+      <label for="birthdate">Data de Nascimento:</label> <!-- Rótulo para o campo de data de nascimento -->
+      <input type="date" id="birthdate" name="birthdate" required> <!-- Campo de entrada de data de nascimento, requerido -->
 
-      <label for="phone">Telefone de Contato:</label>
-      <input type="tel" id="phone" name="phone" required>
+      <label for="phone">Telefone de Contato:</label> <!-- Rótulo para o campo de telefone de contato -->
+      <input type="tel" id="phone" name="phone" required> <!-- Campo de entrada de telefone de contato, requerido -->
 
-      <label for="species">Espécie:</label>
-      <select id="species" name="species" required>
-        <option value="dog">Cachorro</option>
-        <option value="cat">Gato</option>
-        <option value="other">Outro</option>
+      <label for="species">Espécie:</label> <!-- Rótulo para o campo de espécie -->
+      <select id="species" name="species" required> <!-- Caixa de seleção para a espécie, requerida -->
+        <option value="dog">Cachorro</option> <!-- Opção para cachorro -->
+        <option value="cat">Gato</option> <!-- Opção para gato -->
+        <option value="other">Outro</option> <!-- Opção para outra espécie -->
       </select>
 
-      <label for="needsPhoneSearch">Telefone para Busca:</label>
-      <select id="needsPhoneSearch" name="needsPhoneSearch" required>
-        <option value="yes">Sim</option>
-        <option value="no">Não</option>
+      <label for="needsPhoneSearch">Telefone para Busca:</label> <!-- Rótulo para o campo de telefone para busca -->
+      <select id="needsPhoneSearch" name="needsPhoneSearch" required> <!-- Caixa de seleção para o telefone para busca, requerida -->
+        <option value="yes">Sim</option> <!-- Opção "Sim" -->
+        <option value="no">Não</option> <!-- Opção "Não" -->
       </select>
 
-      <button type="submit" onclick="redirectToIndex()">Cadastrar</button>
+      <button type="submit" onclick="redirectToIndex()">Cadastrar</button> <!-- Botão de envio do formulário com uma função JavaScript associada -->
     </form>
   </div>
 
   <script>
-    function redirectToIndex() {
+    function redirectToIndex() { // Função JavaScript para redirecionar para a página inicial
       window.location.href = "index.html";
     }
   </script>

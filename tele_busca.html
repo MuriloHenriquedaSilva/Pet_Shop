@@ -1,60 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+
+<html lang="en"> <!-- Início do elemento HTML principal com linguagem definida como inglês -->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles_telebusca.css">
-  <title>Tele Busca</title>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização responsiva -->
+  <link rel="stylesheet" href="css/styles_telebusca.css"> <!-- Importa a folha de estilo externa -->
+
+  <title>Tele Busca</title> <!-- Define o título da página -->
 </head>
-<body>
+
+<body> <!-- Início do corpo da página -->
+
+  <!-- Cabeçalho da página -->
   <header class="header">
     <nav class="navbar">
-      <div class="logo">Pet Shop</div>
+      <div class="logo">Pet Shop</div> <!-- Exibe o logotipo do Pet Shop -->
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="busca.html">Busca</a></li>
-        <li><a href="cadastro_pet.html">Cadastre-se</a></li>
-        <li><a href="tele_busca.html">Tele Dog</a></li>
+        <li><a href="index.html">Home</a></li> <!-- Link para a página inicial -->
+        <li><a href="servicos.html">Serviços</a></li> <!-- Link para a página de serviços -->
+        <li><a href="busca.html">Busca</a></li> <!-- Link para a página de busca -->
+        <li><a href="cadastro_pet.html">Cadastre-se</a></li> <!-- Link para a página de cadastro -->
+        <li><a href="tele_busca.html">Tele Dog</a></li> <!-- Link para a página de Tele Busca -->
       </ul>
     </nav>
   </header>
 
+  <!-- Seção de destaque -->
   <section class="hero">
-    <h1>Tele Busca de Animais</h1>
-    <p>Selecione o serviço desejado e informe os detalhes para agendar a tele busca do seu animal.</p>
+    <h1>Tele Busca de Animais</h1> <!-- Título da seção -->
+    <p>Selecione o serviço desejado e informe os detalhes para agendar a tele busca do seu animal.</p> <!-- Descrição da seção -->
   </section>
 
+  <!-- Formulário de Tele Busca -->
   <section class="telebusca-form">
     <form id="telebusca-form">
-      <label for="service">Serviço:</label>
+      <label for="service">Serviço:</label> <!-- Rótulo para o campo de seleção de serviço -->
       <select id="service" name="service" required>
-        <option value="" disabled selected>Selecione o serviço</option>
-        <option value="tosa">Tosa</option>
-        <option value="atendimentoveterinario">Atendimento Veterinário</option>
+        <option value="" disabled selected>Selecione o serviço</option> <!-- Opção padrão desativada -->
+        <option value="tosa">Tosa</option> <!-- Opção de serviço: Tosa -->
+        <option value="atendimentoveterinario">Atendimento Veterinário</option> <!-- Opção de serviço: Atendimento Veterinário -->
       </select>
 
       <select id="pet-name" name="pet-name" required>
-        <option value="" disabled selected>Selecione o pet</option>
+        <option value="" disabled selected>Selecione o pet</option> <!-- Opção padrão desativada -->
         <!-- As opções serão preenchidas automaticamente com JavaScript -->
       </select>
 
-      <label for="contact">Telefone de Contato:</label>
-      <input type="tel" id="contact" name="contact" required>
+      <label for="contact">Telefone de Contato:</label> <!-- Rótulo para o campo de telefone de contato -->
+      <input type="tel" id="contact" name="contact" required> <!-- Campo de telefone de contato -->
 
-      <label for="address">Endereço:</label>
-      <textarea id="address" name="address" required></textarea>
+      <label for="address">Endereço:</label> <!-- Rótulo para o campo de endereço -->
+      <textarea id="address" name="address" required></textarea> <!-- Campo de endereço como uma área de texto -->
 
-      <label for="date">Data da Tele Busca:</label>
-      <input type="date" id="date" name="date" required>
+      <label for="date">Data da Tele Busca:</label> <!-- Rótulo para o campo de data da Tele Busca -->
+      <input type="date" id="date" name="date" required> <!-- Campo de data -->
 
-      <button type="submit">Agendar</button>
+      <button type="submit">Agendar</button> <!-- Botão de envio do formulário -->
     </form>
   </section>
 
+  <!-- Rodapé da página -->
   <footer class="footer">
-    <p>&copy; 2023 Pet Shop. Todos os direitos reservados.</p>
+    <p>&copy; 2023 Pet Shop. Todos os direitos reservados.</p> <!-- Direitos autorais -->
   </footer>
+
+  <!-- Inclusão do script JavaScript externo -->
   <script src="js/agendamento.js"></script>
 </body>
 </html>

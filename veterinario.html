@@ -1,59 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+
+<html lang="en"> <!-- Elemento HTML principal com linguagem definida como inglês -->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles_agendamento.css">
-  <title>Agendamento de Banho</title>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização responsiva -->
+  <link rel="stylesheet" href="css/styles_agendamento.css"> <!-- Importa a folha de estilo externa -->
+
+  <title>Agendamento de Banho</title> <!-- Define o título da página -->
 </head>
-<body>
+
+<body> <!-- Início do corpo da página -->
+
+  <!-- Cabeçalho da página -->
   <header class="header">
     <nav class="navbar">
-      <div class="logo">Pet Paradise</div>
+      <div class="logo">Pet Paradise</div> <!-- Exibe o logotipo do Pet Paradise -->
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="busca.html">Busca</a></li>
-        <li><a href="cadastro_pet.html">Cadastre-se</a></li>
-        <li><a href="tele_busca.html">Tele Dog</a></li>
+        <li><a href="index.html">Home</a></li> <!-- Link para a página inicial -->
+        <li><a href="servicos.html">Serviços</a></li> <!-- Link para a página de serviços -->
+        <li><a href="busca.html">Busca</a></li> <!-- Link para a página de busca -->
+        <li><a href="cadastro_pet.html">Cadastre-se</a></li> <!-- Link para a página de cadastro -->
+        <li><a href="tele_busca.html">Tele Dog</a></li> <!-- Link para a página de Tele Busca -->
       </ul>
     </nav>
   </header>
 
+  <!-- Seção de destaque -->
   <section class="hero">
-    <h1>Agendamento de Atendimento</h1>
-    <p>Preencha os detalhes abaixo para agendar a consulta para o seu pet.</p>
+    <h1>Agendamento de Atendimento</h1> <!-- Título da seção -->
+    <p>Preencha os detalhes abaixo para agendar a consulta para o seu pet.</p> <!-- Descrição da seção -->
   </section>
 
+  <!-- Formulário de Agendamento -->
   <section class="agendamento-form">
     <form id="agendamento-form">
-      <input type="hidden" name="service" value="banho">
-      <label for="pet-name">Nome do Pet:</label>
-      
+      <input type="hidden" name="service" value="banho"> <!-- Campo oculto com valor "banho" -->
+      <label for="pet-name">Nome do Pet:</label> <!-- Rótulo para o campo de nome do pet -->
+
       <select id="pet-name" name="pet-name" required>
-        <option value="" disabled selected>Selecione o pet</option>
+        <option value="" disabled selected>Selecione o pet</option> <!-- Opção padrão desativada -->
         <!-- As opções serão preenchidas automaticamente com JavaScript -->
       </select>
 
-      <label for="date">Data do Agendamento:</label>
-      <input type="date" id="date" name="date" required>
+      <label for="date">Data do Agendamento:</label> <!-- Rótulo para o campo de data do agendamento -->
+      <input type="date" id="date" name="date" required> <!-- Campo de data -->
 
-      <label for="time">Horário:</label>
-      <input type="time" id="time" name="time" required>
+      <label for="time">Horário:</label> <!-- Rótulo para o campo de horário -->
+      <input type="time" id="time" name="time" required> <!-- Campo de horário -->
 
-      <label for="contact">Telefone de Contato:</label>
-      <input type="tel" id="contact" name="contact" required>
+      <label for="contact">Telefone de Contato:</label> <!-- Rótulo para o campo de telefone de contato -->
+      <input type="tel" id="contact" name="contact" required> <!-- Campo de telefone de contato -->
 
-      <label for="comments">Comentários:</label>
-      <textarea id="comments" name="comments"></textarea>
+      <label for="comments">Comentários:</label> <!-- Rótulo para o campo de comentários -->
+      <textarea id="comments" name="comments"></textarea> <!-- Campo de comentários como uma área de texto -->
 
-      <button type="submit">Agendar</button>
+      <button type="submit">Agendar</button> <!-- Botão de envio do formulário -->
     </form>
   </section>
 
+  <!-- Rodapé da página -->
   <footer class="footer">
-    <p>&copy; 2023 Pet Paradise. Todos os direitos reservados.</p>
+    <p>&copy; 2023 Pet Paradise. Todos os direitos reservados.</p> <!-- Direitos autorais -->
   </footer>
+
+  <!-- Inclusão do script JavaScript externo -->
   <script src="js/agendamento.js"></script>
 </body>
 </html>
